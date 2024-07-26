@@ -38,10 +38,19 @@ public class Game {
 		return "Rock Question " + index;
 	}
 
+	/**
+	 *
+	 * @return the controle the number of player not inferior to 2
+	 */
 	public boolean isPlayable() {
 		return (howManyPlayers() >= 2);
 	}
 
+	/**
+	 *
+	 * @param playerName
+	 * @return add the player name
+	 */
 	public boolean add(String playerName) {
 		
 		
@@ -54,11 +63,19 @@ public class Game {
 	    System.out.println("They are player number " + players.size());
 		return true;
 	}
-	
+
+	/**
+	 *
+	 * @return the sizw of players
+	 */
 	public int howManyPlayers() {
 		return players.size();
 	}
 
+	/**
+	 * move the player
+	 * @param roll
+	 */
 	public void roll(int roll) {
 		System.out.println(players.get(currentPlayer) + " is the current player");
 		System.out.println("They have rolled a " + roll);
