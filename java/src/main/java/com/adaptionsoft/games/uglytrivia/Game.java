@@ -18,7 +18,7 @@ public class Game {
 	boolean isGettingOutOfPenaltyBox;
 
 	/**
-	 * methode of initialisation of game
+	 * method of initialisation of game
 	 */
     public  Game(){
     	for (int i = 0; i < 50; i++) {
@@ -66,7 +66,7 @@ public class Game {
 
 	/**
 	 *
-	 * @return the sizw of players
+	 * @return the size of players
 	 */
 	public int howManyPlayers() {
 		return players.size();
