@@ -152,7 +152,6 @@ public class Game {
 				categorie="Sports";
 				break;
 
-			// Vous pouvez ajouter autant de cases que vous le souhaitez
 			default:
 				categorie="Rock";
 				break;
@@ -161,7 +160,10 @@ public class Game {
 		return categorie;
 	}
 
-	
+	/**
+	 * check if the answers is correct
+	 * @return    true if the  answers is correct
+	 */
 
 	public boolean wasCorrectlyAnswered() {
 		if (inPenaltyBox[currentPlayer]){
@@ -202,7 +204,11 @@ public class Game {
 			return winner;
 		}
 	}
-	
+
+	/**
+	 * check if the answers is wrong
+	 * @return true if the  answers is wrong
+	 */
 	public boolean wrongAnswer(){
 		System.out.println("Question was incorrectly answered");
 		System.out.println(players.get(currentPlayer)+ " was sent to the penalty box");
